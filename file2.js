@@ -1,1 +1,1 @@
-*sky
+console.log("");
