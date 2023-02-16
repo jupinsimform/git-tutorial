@@ -56,5 +56,15 @@ git restore --staged file.js - Copies the last version of file.js from repo to i
 ## Viewing the history
 git log --oneline\
 git log -3  -  Shows the last 3 entries \
-git log hash1..hash2  -  Range of commits
+git log hash1..hash2  -  Range of commits\
+git log file.txt - Shows the commits that touched file.txt\
+git log --stat file.txt - Shows statistics (the number of changes) for file.txt\
+git log --patch file.txt - Shows the patches (changes) applied to file.txt
+
+## Comparing commits
+git diff HEAD~2 HEAD  -Shows the changes between two commits\
+git diff HEAD~2 HEAD file.txt - Changes to file.txt only
+
+## Finding contributors
+git shortlog
 
