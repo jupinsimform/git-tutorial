@@ -53,5 +53,8 @@ git show HEAD:file.js - Shows the version of file.js stored in the last commit
 ## Unstaging files (undoing git add)
 git restore --staged file.js - Copies the last version of file.js from repo to index
 
-
+## Viewing the history
+git log --oneline\
+git log -3  -  Shows the last 3 entries \
+git log hash1..hash2  -  Range of commits
 
