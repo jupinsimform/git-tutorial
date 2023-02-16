@@ -1,1 +1,1 @@
-* console.log("dsvkj ");
+* *console.log("dsvkj ");
