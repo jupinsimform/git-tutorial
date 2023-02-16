@@ -68,3 +68,5 @@ git diff HEAD~2 HEAD file.txt - Changes to file.txt only
 ## Finding contributors
 git shortlog
 
+# Branching & Merging
+
