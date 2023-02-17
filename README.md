@@ -89,3 +89,49 @@ git stash show 1 - shortcut for stash@{1}\
 git stash apply 1- Applies the given stash to the working \dir
 git stash drop 1 - Deletes the given stash\
 git stash clear - Deletes all the stashes
+
+## Merging
+git merge bugfix - Merges the bugfix branch into the current branch\
+git merge --no-ff bugfix - Creates a merge commit even if FF is possible\
+git merge --squash bugfix - Performs a squash merge\
+git merge --abort  - Aborts the merge\
+git branch --merged - Shows the merged branches\
+git branch --no-merged - Shows the unmerged branches
+
+## Rebasing
+git rebase master -Changes the base of the current branch\
+git rebase -i HEAD~5
+
+## Cherry picking
+git cherry-pick dad47ed  - Applies the given commit on the current branch
+
+## Syncing with remotes
+git fetch origin master - Fetches master from origin\
+git fetch origin - Fetches all objects from origin\
+git fetch - Shortcut for “git fetch origin”\
+git pull - Fetch + merge\
+git push origin master - Pushes master to origin\
+git push - Shortcut for “git push origin master”
+
+## Sharing branches
+git branch -r  - Shows remote tracking branches\
+git branch -vv  - Shows local & remote tracking branches\
+git push -u origin bugfix  - Pushes bugfix to origin\
+git push -d origin bugfix  - Removes bugfix from origin
+
+## Undoing commits
+git reset --soft HEAD^  - Removes the last commit, keeps changed staged\
+git reset --mixed HEAD^  - Unstages the changes as well\
+git reset --hard HEAD^  - Discards local changes
+
+## Reverting commits
+git revert 72856ea  - Reverts the given commit\
+git revert HEAD~3..  - Reverts the last three commits\
+git revert --no-commit HEAD~3..
+
+## Recovering lost commits
+git reflog  - Shows the history of HEAD\
+git reflog show bugfix -- Shows the history of bugfix pointer
+
+## change the last commit message
+git commit --amend
