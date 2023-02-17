@@ -62,7 +62,7 @@ git log --stat file.txt - Shows statistics (the number of changes) for file.txt\
 git log --patch file.txt - Shows the patches (changes) applied to file.txt
 
 ## Comparing commits
-git diff HEAD~2 HEAD  - Shows the changes between two commits\
+git diff HEAD~2 HEAD - Shows the changes between two commits\
 git diff HEAD~2 HEAD file.txt - Changes to file.txt only
 
 ## Finding contributors
